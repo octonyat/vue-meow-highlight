@@ -5,18 +5,18 @@ import HighlightText from '@/components/HighlightText.vue'
 describe('HighlightText.vue', () => {
   describe('highlight text test', () => {
     it('renders props.text when passed', () => {
-      const text = 'foo bar baz'
+      const content = 'foo bar baz'
       const wrapper = shallowMount(HighlightText, {
-        propsData: { text }
+        propsData: { content }
       })
-      expect(wrapper.text()).toMatch(text)
+      expect(wrapper.text()).toMatch(content)
     })
 
     it('displays highlighted text.', () => {
-      const text = 'foo bar baz'
-      const word = 'ba'
+      const content = 'foo bar baz'
+      const query = 'ba'
       const wrapper = shallowMount(HighlightText, {
-        propsData: { text, word }
+        propsData: { content, query }
       })
       expect(wrapper.findAll('.highlight').length).toBe(4)
 
@@ -28,19 +28,19 @@ describe('HighlightText.vue', () => {
     })
 
     it('displays plain text.', () => {
-      const text = 'foo bar baz'
-      const word = 'nyan'
+      const content = 'foo bar baz'
+      const query = 'nyan'
       const wrapper = shallowMount(HighlightText, {
-        propsData: { text, word }
+        propsData: { content, query }
       })
       expect(wrapper.findAll('.highlight').length).toBe(0)
     })
 
     it('displays plain text with whitespace.', () => {
-      const text = 'foo bar    baz'
-      const word = 'ba'
+      const content = 'foo bar    baz'
+      const query = 'ba'
       const wrapper = shallowMount(HighlightText, {
-        propsData: { text, word }
+        propsData: { content, query }
       })
 
       expect(
@@ -66,8 +66,8 @@ describe('HighlightText.vue', () => {
 
     it('count splitted text with ignore case.', () => {
       const localThis = {
-        text: 'FOO BAR baz',
-        word: 'foo bar BAZ',
+        content: 'FOO BAR baz',
+        query: 'foo bar BAZ',
         ignoreCase: true
       }
       const wrapper = shallowMount(HighlightText, {
@@ -78,8 +78,8 @@ describe('HighlightText.vue', () => {
 
     it('has background-color with appropriate Layer index value.', () => {
       const localThis = {
-        text: 'a b a b',
-        word: 'a b'
+        content: 'a b a b',
+        query: 'a b'
       }
       const wrapper = shallowMount(HighlightText, {
         propsData: localThis
@@ -106,8 +106,8 @@ describe('HighlightText.vue', () => {
        * '#00ffff' - rgb(0, 255, 255) - blue color
        */
       const localThis = {
-        text: 'aa bb aa bb',
-        word: 'aa bb aa bb'
+        content: 'aa bb aa bb',
+        query: 'aa bb aa bb'
       }
       const wrapper = shallowMount(HighlightText, {
         propsData: localThis
@@ -134,8 +134,8 @@ describe('HighlightText.vue', () => {
        * '#00ffff' - rgb(0, 255, 255) - blue color
        */
       const localThis = {
-        text: 'aa bb aa bb',
-        word: 'aa b a'
+        content: 'aa bb aa bb',
+        query: 'aa b a'
       }
       const wrapper = shallowMount(HighlightText, {
         propsData: localThis
@@ -162,8 +162,8 @@ describe('HighlightText.vue', () => {
 
     it('has background-color with appropriate Layer index value with custom Palette', () => {
       const localThis = {
-        text: 'a b c d e f',
-        word: 'a b c d e f',
+        content: 'a b c d e f',
+        query: 'a b c d e f',
         palette: ['#ff0000', '#00ff00', '#0000ff', '#000000', '#ffffff']
       }
       const wrapper = shallowMount(HighlightText, {
