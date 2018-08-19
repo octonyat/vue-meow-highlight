@@ -1,3 +1,3 @@
-# vue-highligher
+# vue-neow-highligher
 
-TBW
+🐈 TBW 🐈
