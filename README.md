@@ -1,5 +1,8 @@
 # vue-meow-highlight
 
+[![Build Status](https://travis-ci.org/octonyat/vue-meow-highlight.svg?branch=master)](https://travis-ci.org/octonyat/vue-meow-highlight)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b2c605edf7804a2b8ca34f8ff90f57fe)](https://www.codacy.com/project/octonyat/vue-meow-highlight/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=octonyat/vue-meow-highlight&amp;utm_campaign=Badge_Grade_Dashboard)
+
 ![](https://raw.githubusercontent.com/octonyat/vue-meow-highlight/add_image/capture/preview.gif)
 
 ## Install
