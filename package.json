@@ -1,6 +1,6 @@
 {
   "name": "vue-meow-highlight",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/highlight-text.common.js",
   "scripts": {
     "serve": "vue-cli-service serve --port=8888",
@@ -8,6 +8,15 @@
     "build:lib": "vue-cli-service build --target lib --name highlight-text ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octonyat/vue-meow-highlight.git"
+  },
+  "author": "octonyat <octonyat@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octonyat/vue-meow-highlights"
   },
   "dependencies": {
     "vue": "^2.5.17",
