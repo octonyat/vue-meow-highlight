@@ -31,9 +31,7 @@ Vue.use(VueMeowHighlight)
 />
 ```
 
-## development
-
-🐈TBW🐈
+## Development
 
 ```bash
 npm install @vue/cli-service
